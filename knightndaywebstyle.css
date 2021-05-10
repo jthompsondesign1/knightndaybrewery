@@ -1,0 +1,242 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+    font-family:sans-serif;
+    font-size:1em;
+    background:#023b64;
+    background-color: rgba(	2, 59 ,100, 0.5);
+}
+
+img{
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+/* header */
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-family: 'Karma', serif;
+    color:#023b64;
+    
+}
+
+.header ul {
+    margin: 0;
+    padding: 1.25em;
+    font-family: 'Karma', serif;
+    font-size:18px;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    float:right;
+    display:inline-block;
+    
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    color: #023b64;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    
+    
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color:#d39d2d;
+}
+
+.header li a:active {
+  color:#d39d2d;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+.logo_custom{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+#backtop {
+    position: fixed;
+    left:auto;right: 20px;top:auto;bottom: 20px;
+    outline: none;/*this is the arrow color, change if you want*/
+    overflow:hidden;
+    color:#d39d2d;
+    text-align:center;
+    width:40px;   
+    line-height:40px;
+    font-size:40px;
+    border-radius: 50px;
+    cursor:pointer;
+    transition:all 0.3s linear;
+    z-index:999999;
+    opacity:1;
+  
+}
+
+
+
+#backtop:hover {
+    background-color:#023b64;/*this is the arrow color, change if you want*/
+}
+#backtop.mcOut {
+    opacity:0;
+}
+
+
+
+.imagecolumn{
+    float:right;
+    width:50%;
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+/* The styles above apply to the desktop layout, the media queries you add below change those styles for smaller screens */
+
+/*applies only to screens under 768px - mobile*/
+@media only screen and (max-width: 768px){
+
+
+
+	}
+
+/*applies only to screens btwn 769px and 992px - tablet*/
+@media only screen and (min-width:769px) and (max-width: 992px){
+
+	}
